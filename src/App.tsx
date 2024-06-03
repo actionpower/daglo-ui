@@ -2,6 +2,7 @@ import AlertDialogDemo from './exampleComponents/AlertDialogDemo';
 import CheckboxDemo from './exampleComponents/CheckboxDemo';
 import DisplayContainer from './exampleComponents/DisplayContainer';
 import InputDemo from './exampleComponents/InputDemo';
+import TextareaDemo from './exampleComponents/TextareaDemo';
 
 function App() {
   return (
@@ -14,6 +15,9 @@ function App() {
       </DisplayContainer>
       <DisplayContainer title="Input Demo">
         <InputDemo />
+      </DisplayContainer>
+      <DisplayContainer title="Textarea Demo">
+        <TextareaDemo />
       </DisplayContainer>
     </div>
   );
