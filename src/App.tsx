@@ -5,6 +5,8 @@ import InputDemo from './exampleComponents/InputDemo';
 import SelectDemo from './exampleComponents/SelectDemo';
 import TabsDemo from './exampleComponents/TabsDemo';
 import TextareaDemo from './exampleComponents/TextareaDemo';
+import ToastDemo from './exampleComponents/ToastDemo';
+import { Toaster } from './ui/toaster';
 
 function App() {
   return (
@@ -26,6 +28,10 @@ function App() {
       </DisplayContainer>
       <DisplayContainer title="Tabs Demo">
         <TabsDemo />
+      </DisplayContainer>
+      <DisplayContainer title="Toast Demo">
+        <ToastDemo />
+        <Toaster />
       </DisplayContainer>
     </div>
   );
