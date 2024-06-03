@@ -3,10 +3,12 @@ import CheckboxDemo from './exampleComponents/CheckboxDemo';
 import DisplayContainer from './exampleComponents/DisplayContainer';
 import InputDemo from './exampleComponents/InputDemo';
 import SelectDemo from './exampleComponents/SelectDemo';
+import SonnerDemo from './exampleComponents/SonnerDemo';
 import TabsDemo from './exampleComponents/TabsDemo';
 import TextareaDemo from './exampleComponents/TextareaDemo';
 import ToastDemo from './exampleComponents/ToastDemo';
 import { Toaster } from './ui/toaster';
+import { Toaster as SonnerToaster } from './ui/sonner';
 
 function App() {
   return (
@@ -32,6 +34,10 @@ function App() {
       <DisplayContainer title="Toast Demo">
         <ToastDemo />
         <Toaster />
+      </DisplayContainer>
+      <DisplayContainer title="Sonner Demo">
+        <SonnerDemo />
+        <SonnerToaster />
       </DisplayContainer>
     </div>
   );
