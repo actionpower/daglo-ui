@@ -3,11 +3,12 @@ import CheckboxDemo from './exampleComponents/CheckboxDemo';
 import DisplayContainer from './exampleComponents/DisplayContainer';
 import InputDemo from './exampleComponents/InputDemo';
 import SelectDemo from './exampleComponents/SelectDemo';
+import TabsDemo from './exampleComponents/TabsDemo';
 import TextareaDemo from './exampleComponents/TextareaDemo';
 
 function App() {
   return (
-    <div className="p-4 max-w-[31.25rem] bg-gray-100">
+    <div className="grid grid-cols-3 gap-3 p-4 bg-gray-100">
       <DisplayContainer title="Alert Dialog Demo">
         <AlertDialogDemo />
       </DisplayContainer>
@@ -22,6 +23,9 @@ function App() {
       </DisplayContainer>
       <DisplayContainer title="Select Demo">
         <SelectDemo />
+      </DisplayContainer>
+      <DisplayContainer title="Tabs Demo">
+        <TabsDemo />
       </DisplayContainer>
     </div>
   );

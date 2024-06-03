@@ -7,7 +7,7 @@ const DisplayContainer = ({
   children,
 }: ComponentWithChildren<DisplayContainerProps>) => {
   return (
-    <div className="p-4 mb-6 bg-white rounded-md">
+    <div className="p-4 bg-white rounded-md">
       <div className="mb-2 text-xl">{title}</div>
       {children}
     </div>
