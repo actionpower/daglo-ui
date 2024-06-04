@@ -11,7 +11,7 @@ import {
 import { Input } from '@/src/ui/input';
 import { Label } from '@/src/ui/label';
 
-export function DialogDemo() {
+const DialogDemo = () => {
   return (
     <Dialog>
       <DialogTrigger asChild>
@@ -44,4 +44,6 @@ export function DialogDemo() {
       </DialogContent>
     </Dialog>
   );
-}
+};
+
+export default DialogDemo;

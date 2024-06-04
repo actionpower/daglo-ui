@@ -2,16 +2,17 @@ import AlertDemo from './exampleComponents/AlertDemo';
 import AlertDialogDemo from './exampleComponents/AlertDialogDemo';
 import BadgeDemo from './exampleComponents/BadgeDemo';
 import CheckboxDemo from './exampleComponents/CheckboxDemo';
-import { DialogDemo } from './exampleComponents/DialogDemo';
+import DialogDemo from './exampleComponents/DialogDemo';
 import DisplayContainer from './exampleComponents/DisplayContainer';
 import InputDemo from './exampleComponents/InputDemo';
 import SelectDemo from './exampleComponents/SelectDemo';
 import SonnerDemo from './exampleComponents/SonnerDemo';
+import SwitchDemo from './exampleComponents/SwitchDemo';
 import TabsDemo from './exampleComponents/TabsDemo';
 import TextareaDemo from './exampleComponents/TextareaDemo';
 import ToastDemo from './exampleComponents/ToastDemo';
 import { Toaster as SonnerToaster } from './ui/sonner';
-import { Toaster } from './ui/toaster';
+import Toaster from './ui/toaster';
 
 function App() {
   return (
@@ -50,6 +51,9 @@ function App() {
       </DisplayContainer>
       <DisplayContainer title="Alert Demo">
         <AlertDemo />
+      </DisplayContainer>
+      <DisplayContainer title="Switch Demo">
+        <SwitchDemo />
       </DisplayContainer>
     </div>
   );
