@@ -1,6 +1,7 @@
 import AlertDemo from './exampleComponents/AlertDemo';
 import AlertDialogDemo from './exampleComponents/AlertDialogDemo';
 import BadgeDemo from './exampleComponents/BadgeDemo';
+import ButtonDemo from './exampleComponents/ButtonDemo';
 import CheckboxDemo from './exampleComponents/CheckboxDemo';
 import DialogDemo from './exampleComponents/DialogDemo';
 import DisplayContainer from './exampleComponents/DisplayContainer';
@@ -17,7 +18,7 @@ import Toaster from './ui/toaster';
 
 function App() {
   return (
-    <div className="grid grid-cols-3 gap-3 p-4 bg-gray-100">
+    <div className="grid grid-cols-2 gap-3 p-4 bg-gray-100">
       <DisplayContainer title="Alert Dialog Demo">
         <AlertDialogDemo />
       </DisplayContainer>
@@ -58,6 +59,9 @@ function App() {
       </DisplayContainer>
       <DisplayContainer title="Pagination Demo">
         <PaginationDemo />
+      </DisplayContainer>
+      <DisplayContainer title="Button Demo">
+        <ButtonDemo />
       </DisplayContainer>
     </div>
   );
