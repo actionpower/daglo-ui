@@ -5,6 +5,7 @@ import CheckboxDemo from './exampleComponents/CheckboxDemo';
 import DialogDemo from './exampleComponents/DialogDemo';
 import DisplayContainer from './exampleComponents/DisplayContainer';
 import InputDemo from './exampleComponents/InputDemo';
+import PaginationDemo from './exampleComponents/PaginationDemo';
 import SelectDemo from './exampleComponents/SelectDemo';
 import SonnerDemo from './exampleComponents/SonnerDemo';
 import SwitchDemo from './exampleComponents/SwitchDemo';
@@ -54,6 +55,9 @@ function App() {
       </DisplayContainer>
       <DisplayContainer title="Switch Demo">
         <SwitchDemo />
+      </DisplayContainer>
+      <DisplayContainer title="Pagination Demo">
+        <PaginationDemo />
       </DisplayContainer>
     </div>
   );
