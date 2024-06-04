@@ -1,3 +1,4 @@
+import DatePicker from './components/DatePicker';
 import AlertDemo from './exampleComponents/AlertDemo';
 import AlertDialogDemo from './exampleComponents/AlertDialogDemo';
 import BadgeDemo from './exampleComponents/BadgeDemo';
@@ -73,6 +74,7 @@ function App() {
       </DisplayContainer>
       <DisplayContainer title="DatePicker Demo">
         <DatePickerDemo />
+        <DatePicker />
       </DisplayContainer>
     </div>
   );
