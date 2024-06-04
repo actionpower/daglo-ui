@@ -1,7 +1,14 @@
 import { Badge } from '@/src/ui/badge';
 
 const BadgeDemo = () => {
-  return <Badge variant="outline">Badge</Badge>;
+  return (
+    <div className="flex gap-x-2">
+      <Badge variant="default">Badge</Badge>
+      <Badge variant="destructive">Badge</Badge>
+      <Badge variant="outline">Badge</Badge>
+      <Badge variant="secondary">Badge</Badge>
+    </div>
+  );
 };
 
 export default BadgeDemo;

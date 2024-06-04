@@ -1,3 +1,4 @@
+import AlertDemo from './exampleComponents/AlertDemo';
 import AlertDialogDemo from './exampleComponents/AlertDialogDemo';
 import BadgeDemo from './exampleComponents/BadgeDemo';
 import CheckboxDemo from './exampleComponents/CheckboxDemo';
@@ -46,6 +47,9 @@ function App() {
       </DisplayContainer>
       <DisplayContainer title="Badge Demo">
         <BadgeDemo />
+      </DisplayContainer>
+      <DisplayContainer title="Alert Demo">
+        <AlertDemo />
       </DisplayContainer>
     </div>
   );
