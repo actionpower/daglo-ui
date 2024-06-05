@@ -1,17 +1,15 @@
 'use client';
 
-import * as React from 'react';
 import { format } from 'date-fns';
 import { Calendar as CalendarIcon } from 'lucide-react';
+import * as React from 'react';
 
 import { cn } from '@/src/lib/utils';
 import { Button } from '@/src/ui/button';
 import { Calendar } from '@/src/ui/calendar';
 import { Popover, PopoverContent, PopoverTrigger } from '@/src/ui/popover';
-import { DayPicker } from 'react-day-picker';
-import DatePicker from '../components/DatePicker';
 
-export function DatePickerDemo() {
+const DatePickerDemo = () => {
   const [date, setDate] = React.useState<Date>();
 
   return (
@@ -35,8 +33,9 @@ export function DatePickerDemo() {
           onSelect={setDate}
           initialFocus
         />
-        <DatePicker />
       </PopoverContent>
     </Popover>
   );
-}
+};
+
+export default DatePickerDemo;

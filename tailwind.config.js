@@ -17,6 +17,92 @@ module.exports = {
       },
     },
     extend: {
+      fontSize: {
+        '12-r': [
+          '0.75rem',
+          {
+            lineHeight: '1rem',
+            fontWeight: '400',
+          },
+        ],
+        '12-m': [
+          '0.75rem',
+          {
+            lineHeight: '1rem',
+            fontWeight: '500',
+          },
+        ],
+        '12-b': [
+          '0.75rem',
+          {
+            lineHeight: '1rem',
+            fontWeight: '600',
+          },
+        ],
+        '14-r': [
+          '0.875rem',
+          {
+            lineHeight: '1.25rem',
+            fontWeight: '400',
+          },
+        ],
+        '14-m': [
+          '0.875rem',
+          {
+            lineHeight: '1.25rem',
+            fontWeight: '500',
+          },
+        ],
+        '14-b': [
+          '0.875rem',
+          {
+            lineHeight: '1.25rem',
+            fontWeight: '600',
+          },
+        ],
+        '16-r': [
+          '1rem',
+          {
+            lineHeight: '1.375rem',
+            fontWeight: '400',
+          },
+        ],
+        '16-m': [
+          '1rem',
+          {
+            lineHeight: '1.375rem',
+            fontWeight: '500',
+          },
+        ],
+        '16-b': [
+          '1rem',
+          {
+            lineHeight: '1.375rem',
+            fontWeight: '600',
+          },
+        ],
+        '24-r': [
+          '1.5rem',
+          {
+            lineHeight: '1.875rem',
+            fontWeight: '400',
+          },
+        ],
+        '24-m': [
+          '1.5rem',
+          {
+            lineHeight: '1.875rem',
+            fontWeight: '500',
+          },
+        ],
+        '24-b': [
+          '1.5rem',
+          {
+            lineHeight: '1.875rem',
+            fontWeight: '600',
+          },
+        ],
+      },
       colors: {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
