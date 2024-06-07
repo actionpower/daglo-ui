@@ -33,6 +33,7 @@ const DatePicker = ({
       defaultPickerValue={defaultValue}
       onKeyDown={(e) => [e.preventDefault()]}
       showTime={isShowTime}
+      inputReadOnly
     />
   );
 };
