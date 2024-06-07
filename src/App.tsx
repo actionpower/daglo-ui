@@ -3,6 +3,7 @@ import AlertDialogDemo from './exampleComponents/AlertDialogDemo';
 import BadgeDemo from './exampleComponents/BadgeDemo';
 import ButtonDemo from './exampleComponents/ButtonDemo';
 import CheckboxDemo from './exampleComponents/CheckboxDemo';
+import DatePickerDemo from './exampleComponents/DatPickerDemo';
 import DialogDemo from './exampleComponents/DialogDemo';
 import DisplayContainer from './exampleComponents/DisplayContainer';
 import InputDemo from './exampleComponents/InputDemo';
@@ -66,6 +67,9 @@ function App() {
       </DisplayContainer>
       <DisplayContainer title="RadioGroup Demo">
         <RadioGroupDemo />
+      </DisplayContainer>
+      <DisplayContainer title="DatePicker Demo">
+        <DatePickerDemo />
       </DisplayContainer>
     </div>
   );
