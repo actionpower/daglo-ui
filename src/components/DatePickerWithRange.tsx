@@ -36,6 +36,7 @@ const DatePickerWithRange = ({
         locale={ko_KR}
         allowClear
         showTime={isShowTime}
+        inputReadOnly
       />
     </div>
   );
