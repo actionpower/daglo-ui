@@ -5,64 +5,39 @@
 /* 캘린더 스타일링을 위해 편집한 스타일링 목록 */
 
 .rc-picker-panel {
-  display: inline-block;
-  vertical-align: top;
-  /* border: 1px solid #666; */
-  /* background: #fff0ff; */
+  @apply inline-block align-top;
 }
 
 .rc-picker-dropdown {
-  position: absolute;
-  pointer-events: none;
-  @apply p-3 border border-slate-200 rounded-lg bg-white;
-  /* box-shadow: 0 0 1px red; */
-}
-
-.rc-picker-panel {
-  display: inline-block;
-  vertical-align: top;
-  /* background: #fff0ff; */
-  /* border: 1px solid #666; */
-}
-
-.rc-picker-dropdown {
-  position: absolute;
-  pointer-events: none;
-  /* box-shadow: 0 0 1px red; */
+  @apply absolute pointer-events-none;
 }
 
 .rc-picker-dropdown-hidden {
-  display: none;
+  @apply hidden;
 }
 
-.rc-picker-cell-hover > .rc-picker-cell-inner {
-  @apply hover:bg-slate-100 rounded-sm;
+.rc-picker-cell {
+  @apply rounded-sm cursor-pointer;
+}
+
+.rc-picker-cell-hover > .rc-picker-cell-inner,
+.rc-picker-cell {
+  @apply hover:bg-slate-100;
 }
 
 .rc-picker-cell-range-start > .rc-picker-cell-inner,
 .rc-picker-cell-range-end > .rc-picker-cell-inner,
 .rc-picker-cell-selected > .rc-picker-cell-inner {
-  @apply !bg-black !text-white rounded-sm;
+  @apply !bg-black !text-white;
 }
 
 .rc-picker-cell-inner {
-  /* display: inline-block; */
+  @apply w-full m-0 bg-transparent border-none outline-none transition-all rounded-sm text-14-r flex items-center justify-center;
   box-sizing: border-box;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  line-height: 20px;
-  background: transparent;
-  border: 0;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  transition:
-    background 0.3s,
-    border 0.3s;
-  /* height: 20px; */
-  /* font-size: 12px; */
-  @apply rounded-sm text-14-r flex items-center justify-center;
+}
+
+.rc-picker-range-wrapper .rc-picker-cell {
+  @apply text-14-r;
 }
 
 .rc-picker-date-panel {
@@ -70,7 +45,7 @@
 }
 
 .rc-picker-date-panel .rc-picker-cell-inner {
-  @apply w-[2.25rem] h-[2.25rem];
+  @apply p-3;
 }
 
 .rc-picker-content > thead {
@@ -93,6 +68,13 @@
   @apply mr-3;
 }
 
+.rc-picker-header-prev-btn,
+.rc-picker-header-next-btn,
+.rc-picker-header-super-prev-btn,
+.rc-picker-header-super-next-btn {
+  @apply border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground transition-colors py-[0.125rem] px-2 rounded-md;
+}
+
 .rc-picker-header-view {
   @apply text-14-m;
 }
@@ -106,15 +88,7 @@
 }
 
 .rc-picker-time-panel-column > li .rc-picker-time-panel-cell-inner {
-  /* display: block; */
-  /* width: 100%;
-  height: 20px;
-  line-height: 20px; */
-  margin: 0;
-  color: #333;
-  text-align: center;
-
-  @apply text-14-r w-full h-7 flex items-center justify-center;
+  @apply text-14-r w-full h-7 flex items-center justify-center text-center text-[#333] m-0;
 }
 
 .rc-picker-time-panel-column
@@ -125,21 +99,24 @@
 
 .rc-picker-footer,
 .rc-picker-picker-footer {
-  background: white;
+  @apply bg-white;
 }
 
-.rc-picker-time-panel-column > li.rc-picker-time-panel-cell-selected {
-  @apply bg-black rounded-[0.375rem];
+.rc-picker-time-panel-column > li.rc-picker-time-panel-cell > div {
+  @apply !bg-white text-14-r text-center py-1;
+}
+
+.rc-picker-time-panel-column > li.rc-picker-time-panel-cell-selected,
+.rc-picker-time-panel-column > li.rc-picker-time-panel-cell-selected > div {
+  @apply !bg-black rounded-[0.375rem] text-white;
 }
 
 .rc-picker-datetime-panel .rc-picker-time-panel {
-  @apply border-l border-slate-200
-  /* border-left: 1px solid #999; */;
+  @apply border-l border-slate-200;
 }
 
 .rc-picker-time-panel {
-  @apply pl-3;
-  width: auto;
+  @apply pl-3 w-auto;
 }
 
 .rc-picker-time-panel .rc-picker-content {
@@ -151,45 +128,29 @@
 }
 
 .rc-picker-input {
-  /* @apply bg-primary text-primary-foreground shadow hover:bg-primary/90; */
-}
-
-.rc-picker-input {
-  position: relative;
-  display: inline-flex;
-  width: 100%;
+  @apply relative inline-flex w-full;
 }
 .rc-picker-rtl .rc-picker-input {
-  text-align: right;
+  @apply text-right;
 }
 .rc-picker-input-active > input {
   background: rgba(0, 0, 255, 0.05);
 }
 .rc-picker-input > input {
-  width: 100%;
+  @apply rounded-md border border-input bg-transparent px-4 py-2 text-sm shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring cursor-pointer caret-transparent w-full;
 }
+
 .rc-picker-input > input::-moz-placeholder {
-  opacity: 1;
+  @apply opacity-100;
 }
-.rc-picker-input > input::placeholder {
-  color: #bfbfbf;
+.rc-picker-input > input {
+  @apply placeholder:text-[#bfbfbf];
 }
 .rc-picker-input > input:placeholder-shown {
-  text-overflow: ellipsis;
+  @apply text-ellipsis;
 }
 .rc-picker-input-placeholder > input {
-  color: #bfbfbf;
-}
-
-.rc-picker-focused {
-  /* border: 1px solid blue; */
-}
-.rc-picker-invalid {
-  /* box-shadow: 0 0 2px red; */
-}
-
-.rc-picker-time-panel-cell-inner {
-  @apply py-2;
+  @apply text-[#bfbfbf];
 }
 
 .rc-picker-ok {
@@ -198,6 +159,64 @@
 
 .rc-picker-ok > button {
   @apply text-14-m border border-slate-100 rounded-sm px-4 py-2 cursor-pointer hover:bg-slate-100 transition;
+}
+
+.rc-picker-clear {
+  @apply top-1/2 right-2 -translate-y-1/2 absolute cursor-pointer;
+}
+.rc-picker-rtl .rc-picker-clear {
+  @apply right-auto left-1;
+}
+.rc-picker-clear-btn::after {
+  content: '×';
+}
+
+.rc-picker-presets {
+  @apply hidden;
+}
+.rc-picker-presets ul {
+  @apply m-0 p-0 list-none;
+}
+
+.rc-picker-panel-container {
+  @apply inline-block align-top transition pointer-events-auto p-3 border border-slate-200 rounded-lg bg-white;
+}
+
+.rc-picker-range-arrow {
+  @apply hidden;
+}
+
+.rc-picker-range {
+  @apply relative inline-flex;
+}
+
+.rc-picker-range.rc-picker-focused .rc-picker-active-bar {
+  @apply opacity-100;
+}
+
+.rc-picker-range .rc-picker-active-bar {
+  @apply bottom-0 h-full bg-transparent border-2 opacity-0 pointer-events-none rounded-md transition-all border-black;
+}
+
+.rc-picker-range-wrapper .rc-picker-cell > div {
+  @apply !bg-transparent;
+}
+
+.rc-picker-cell.rc-picker-cell-in-range {
+  @apply !bg-slate-100;
+}
+
+.rc-picker-cell.rc-picker-cell-range-start,
+.rc-picker-cell.rc-picker-cell-range-end {
+  @apply !bg-black text-white;
+}
+
+.rc-picker-body > .rc-picker-content {
+  @apply w-full;
+}
+
+.rc-picker-range-separator {
+  @apply hidden;
 }
 
 /* 미수정 스타일링 */
@@ -253,9 +272,6 @@
   opacity: 0.2;
 }
 
-.rc-picker-cell-inner:hover {
-  background: rgba(0, 0, 255, 0.3);
-}
 .rc-picker-cell-in-view {
   color: #333;
 }
@@ -287,15 +303,6 @@
 }
 .rc-picker-cell-range-hover-end::after {
   border-right: 1px solid green !important;
-}
-
-.rc-picker-presets {
-  background: #ccccff;
-}
-.rc-picker-presets ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
 }
 
 .rc-picker-ranges {
@@ -382,7 +389,6 @@
   .rc-picker-time-panel-column
   > li
   .rc-picker-time-panel-cell-inner {
-  padding: 0 12px 0 0;
   text-align: right;
 }
 .rc-picker-datetime-panel {
@@ -400,20 +406,6 @@
 .rc-picker-datetime-panel-active .rc-picker-date-panel-active,
 .rc-picker-datetime-panel-active .rc-picker-time-panel-active {
   opacity: 1;
-}
-
-.rc-picker-clear {
-  position: absolute;
-  top: 0;
-  right: 4px;
-  cursor: pointer;
-}
-.rc-picker-rtl .rc-picker-clear {
-  right: auto;
-  left: 4px;
-}
-.rc-picker-clear-btn::after {
-  content: '×';
 }
 
 .rc-picker-dropdown-range {
@@ -472,30 +464,11 @@
   border: 8px / 2 solid blue;
   border-color: #fff0ff #fff0ff transparent transparent;
 }
-.rc-picker-range {
-  position: relative;
-  display: inline-flex;
-}
+
 .rc-picker-range-wrapper {
   display: flex;
 }
-.rc-picker-range .rc-picker-active-bar {
-  bottom: 0;
-  height: 3px;
-  background: green;
-  opacity: 0;
-  transition: all 0.3s;
-  pointer-events: none;
-}
-.rc-picker-range.rc-picker-focused .rc-picker-active-bar {
-  opacity: 1;
-}
-.rc-picker-panel-container {
-  display: inline-block;
-  vertical-align: top;
-  transition: margin 0.3s;
-  pointer-events: all;
-}
+
 .rc-picker-panel-layout {
   display: flex;
   flex-wrap: nowrap;
