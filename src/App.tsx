@@ -1,3 +1,4 @@
+import ContentsLayout from './components/ContentsLayout';
 import AlertDemo from './exampleComponents/AlertDemo';
 import AlertDialogDemo from './exampleComponents/AlertDialogDemo';
 import BadgeDemo from './exampleComponents/BadgeDemo';
@@ -70,6 +71,9 @@ function App() {
       </DisplayContainer>
       <DisplayContainer title="DatePicker Demo">
         <DatePickerDemo />
+      </DisplayContainer>
+      <DisplayContainer title="Content title and layout">
+        <ContentsLayout title="권한 관리">컨텐츠</ContentsLayout>
       </DisplayContainer>
     </div>
   );
