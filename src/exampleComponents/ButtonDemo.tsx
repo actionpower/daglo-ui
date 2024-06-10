@@ -1,5 +1,5 @@
 import { RocketIcon } from '@radix-ui/react-icons';
-import { Button } from '../ui/button';
+import { Button } from '@/src/components';
 
 const ButtonDemo = () => {
   return (

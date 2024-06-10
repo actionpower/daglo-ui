@@ -1,4 +1,5 @@
-import { Button } from '../ui/button';
+import { PropsWithChildren } from 'react';
+import Button from '../ui/button';
 
 interface SidebarProps {
   userName?: string;
@@ -9,7 +10,7 @@ const Sidebar = ({
   onLogoutButtonClick,
   userName = 'Not found',
   children,
-}: ComponentWithChildren<SidebarProps>) => {
+}: PropsWithChildren<SidebarProps>) => {
   return (
     <aside className="fixed top-14 z-30 hidden h-screen w-full shrink-0 md:sticky md:block border-r max-w-[200px]">
       <div className="flex flex-col justify-between h-full">

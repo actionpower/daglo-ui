@@ -1,5 +1,4 @@
-import { Input } from '@/src/ui/input';
-import { Label } from '../ui/label';
+import { Input, Label } from '@/src/components';
 
 const InputDemo = () => {
   return (

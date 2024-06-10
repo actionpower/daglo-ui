@@ -1,3 +1,5 @@
+import { PropsWithChildren } from 'react';
+
 interface DisplayContainerProps {
   title?: string;
 }
@@ -5,7 +7,7 @@ interface DisplayContainerProps {
 const DisplayContainer = ({
   title = '',
   children,
-}: ComponentWithChildren<DisplayContainerProps>) => {
+}: PropsWithChildren<DisplayContainerProps>) => {
   return (
     <div className="p-4 bg-white rounded-md">
       <div className="mb-2 text-xl">{title}</div>

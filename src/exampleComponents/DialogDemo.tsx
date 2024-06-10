@@ -1,5 +1,5 @@
-import { Button } from '@/src/ui/button';
 import {
+  Button,
   Dialog,
   DialogContent,
   DialogDescription,
@@ -7,9 +7,9 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from '@/src/ui/dialog';
-import { Input } from '@/src/ui/input';
-import { Label } from '@/src/ui/label';
+  Input,
+  Label,
+} from '@/src/components';
 
 const DialogDemo = () => {
   return (

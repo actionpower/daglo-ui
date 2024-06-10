@@ -4,7 +4,7 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from '@/src/ui/select';
+} from '@/src/components';
 
 const SelectDemo = () => {
   return (

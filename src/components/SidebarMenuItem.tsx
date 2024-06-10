@@ -1,25 +1,28 @@
 import clsx from 'clsx';
-import React, { ButtonHTMLAttributes } from 'react';
+import React from 'react';
 import { cn } from '../lib/utils';
+import { ExtendedPropsWithChildrenAndAs } from '../type';
 
-interface SidebarMenuItemProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+interface SidebarMenuItemProps {
   icon?: React.ReactNode;
   isCurrentPath?: boolean;
 }
 
-const SidebarMenuItem = ({
+const SidebarMenuItem = <ElementProps extends React.ElementType = 'a'>({
   icon,
   children,
   isCurrentPath = false,
   className,
+  as,
   ...restProps
-}: ComponentWithChildren<SidebarMenuItemProps>) => {
+}: ExtendedPropsWithChildrenAndAs<ElementProps, SidebarMenuItemProps>) => {
   const hasIcon = !!icon;
+  const Component = as || 'a';
 
   return (
-    <button
+    <Component
       className={cn(
-        'flex items-center p-2 rounded-md hover:bg-slate-100 text-14-r w-full text-left',
+        'flex items-center p-2 rounded-md hover:bg-slate-100 text-14-r w-full text-left hover:cursor-pointer',
         clsx({ 'text-14-b bg-slate-100': isCurrentPath }),
         className,
       )}
@@ -27,7 +30,7 @@ const SidebarMenuItem = ({
     >
       {icon && <div className="mr-[0.375rem]">{icon}</div>}
       <div className={clsx({ 'ml-[1.375rem]': !hasIcon })}>{children}</div>
-    </button>
+    </Component>
   );
 };
 
