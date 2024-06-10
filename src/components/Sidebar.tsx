@@ -1,6 +1,4 @@
-import { IconJarLogoIcon } from '@radix-ui/react-icons';
 import { Button } from '../ui/button';
-import SidebarMenuItem from './SidebarMenuItem';
 
 interface SidebarProps {
   userName?: string;
@@ -10,7 +8,8 @@ interface SidebarProps {
 const Sidebar = ({
   onLogoutButtonClick,
   userName = 'Not found',
-}: SidebarProps) => {
+  children,
+}: ComponentWithChildren<SidebarProps>) => {
   return (
     <aside className="fixed top-14 z-30 hidden h-screen w-full shrink-0 md:sticky md:block border-r max-w-[200px]">
       <div className="flex flex-col justify-between h-full">
@@ -23,11 +22,7 @@ const Sidebar = ({
               로그아웃
             </Button>
           </div>
-          <SidebarMenuItem
-            icon={<IconJarLogoIcon className="w-4 mr-[0.375rem]" />}
-          >
-            <button>유저 관리</button>
-          </SidebarMenuItem>
+          <div className="p-3 grid gap-y-[0.125rem]">{children}</div>
         </div>
       </div>
     </aside>

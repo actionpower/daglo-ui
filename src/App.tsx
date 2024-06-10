@@ -1,17 +1,17 @@
 import ContentsLayout from './components/ContentsLayout';
-import Sidebar from './components/Sidebar';
 import AlertDemo from './exampleComponents/AlertDemo';
 import AlertDialogDemo from './exampleComponents/AlertDialogDemo';
 import BadgeDemo from './exampleComponents/BadgeDemo';
 import ButtonDemo from './exampleComponents/ButtonDemo';
 import CheckboxDemo from './exampleComponents/CheckboxDemo';
-import DatePickerDemo from './exampleComponents/DatPickerDemo';
+import DatePickerDemo from './exampleComponents/DatePickerDemo';
 import DialogDemo from './exampleComponents/DialogDemo';
 import DisplayContainer from './exampleComponents/DisplayContainer';
 import InputDemo from './exampleComponents/InputDemo';
 import PaginationDemo from './exampleComponents/PaginationDemo';
 import RadioGroupDemo from './exampleComponents/RadioGroupDemo';
 import SelectDemo from './exampleComponents/SelectDemo';
+import SidebarDemo from './exampleComponents/SidebarDemo';
 import SonnerDemo from './exampleComponents/SonnerDemo';
 import SwitchDemo from './exampleComponents/SwitchDemo';
 import TabsDemo from './exampleComponents/TabsDemo';
@@ -20,14 +20,10 @@ import ToastDemo from './exampleComponents/ToastDemo';
 import { Toaster as SonnerToaster } from './ui/sonner';
 import Toaster from './ui/toaster';
 
-function App() {
-  const userName = 'foo';
-  const onLogoutButtonClick = () => {
-    console.log('logout');
-  };
-
+const App = () => {
   return (
     <div>
+      <SidebarDemo />
       <div className="grid grid-cols-2 gap-3 p-4 bg-gray-100">
         <DisplayContainer title="Alert Dialog Demo">
           <AlertDialogDemo />
@@ -83,15 +79,8 @@ function App() {
           <ContentsLayout title="권한 관리">컨텐츠</ContentsLayout>
         </DisplayContainer>
       </div>
-      <div className="flex">
-        <Sidebar
-          userName={userName}
-          onLogoutButtonClick={onLogoutButtonClick}
-        />
-        <ContentsLayout title="테스트">컨텐츠</ContentsLayout>
-      </div>
     </div>
   );
-}
+};
 
 export default App;
