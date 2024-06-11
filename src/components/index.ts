@@ -66,6 +66,8 @@ import DatePicker from './DatePicker';
 import DatePickerWithRange from './DatePickerWithRange';
 import Sidebar from './Sidebar';
 import SidebarMenuItem from './SidebarMenuItem';
+import 'src/style/index.css';
+import 'src/style/calendarStyle.css';
 
 export {
   Accordion,

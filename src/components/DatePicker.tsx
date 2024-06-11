@@ -2,7 +2,6 @@ import { Dayjs } from 'dayjs';
 import { Picker } from 'rc-picker';
 import dayjsGenerateConfig from 'rc-picker/lib/generate/dayjs';
 import ko_KR from 'rc-picker/lib/locale/ko_KR';
-import '../../calendarStyle.css';
 
 interface DatePickerProps {
   defaultValue: Dayjs;
