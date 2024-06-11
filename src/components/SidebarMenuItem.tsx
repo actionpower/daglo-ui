@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 import React from 'react';
-import { cn } from '../lib/utils';
+import { cn } from '@/src/utils';
 import { ExtendedPropsWithChildrenAndAs } from '../type';
 
 interface SidebarMenuItemProps {

@@ -5,7 +5,7 @@ import {
   DotsHorizontalIcon,
 } from '@radix-ui/react-icons';
 
-import { cn } from '@/src/lib/utils';
+import { cn } from '@/src/utils';
 import { ButtonProps, buttonVariants } from '@/src/ui/button';
 import clsx from 'clsx';
 
