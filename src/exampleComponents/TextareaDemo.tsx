@@ -1,5 +1,4 @@
-import { Textarea } from '@/src/ui/textarea';
-import { Label } from '../ui/label';
+import { Textarea, Label } from '@/src/components';
 
 const TextareaDemo = () => {
   return (

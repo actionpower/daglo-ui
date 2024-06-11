@@ -1,11 +1,12 @@
-import { Button } from '@/src/ui/button';
-import { ToastAction } from '@/src/ui/toast';
-import { useToast } from '@/src/ui/use-toast';
+import { useToast } from '@/src/hooks/useToast';
+import { Button, ToastAction, Toaster } from '@/src/components';
 
 const ToastDemo = () => {
   const { toast } = useToast();
+
   return (
     <div className="flex gap-x-2">
+      <Toaster />
       <Button
         variant="outline"
         onClick={() => {

@@ -1,8 +1,6 @@
 import * as React from 'react';
-
+import { DatePicker, DatePickerWithRange } from '@/src/components';
 import dayjs, { Dayjs } from 'dayjs';
-import DatePicker from '../components/DatePicker';
-import DatePickerWithRange from '../components/DatePickerWithRange';
 
 const DatePickerDemo = () => {
   const defaultValue = dayjs();

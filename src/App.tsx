@@ -17,8 +17,6 @@ import SwitchDemo from './exampleComponents/SwitchDemo';
 import TabsDemo from './exampleComponents/TabsDemo';
 import TextareaDemo from './exampleComponents/TextareaDemo';
 import ToastDemo from './exampleComponents/ToastDemo';
-import { Toaster as SonnerToaster } from './ui/sonner';
-import Toaster from './ui/toaster';
 
 const App = () => {
   return (
@@ -45,11 +43,9 @@ const App = () => {
         </DisplayContainer>
         <DisplayContainer title="Toast Demo">
           <ToastDemo />
-          <Toaster />
         </DisplayContainer>
         <DisplayContainer title="Sonner Demo">
           <SonnerDemo />
-          <SonnerToaster />
         </DisplayContainer>
         <DisplayContainer title="Dialog Demo">
           <DialogDemo />

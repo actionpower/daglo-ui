@@ -1,4 +1,4 @@
-import { Badge } from '@/src/ui/badge';
+import { Badge } from '@/src/components';
 
 const BadgeDemo = () => {
   return (

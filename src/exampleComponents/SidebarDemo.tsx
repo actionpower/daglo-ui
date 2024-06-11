@@ -1,13 +1,13 @@
-import { IconJarLogoIcon } from '@radix-ui/react-icons';
-import ContentsLayout from '../components/ContentsLayout';
-import Sidebar from '../components/Sidebar';
-import SidebarMenuItem from '../components/SidebarMenuItem';
 import {
+  Accordion,
+  AccordionContent,
   AccordionItem,
   AccordionTrigger,
-  AccordionContent,
-} from '@/src/ui/accordion';
-import { Accordion } from '../ui/accordion';
+  ContentsLayout,
+  Sidebar,
+  SidebarMenuItem,
+} from '@/src/components';
+import { IconJarLogoIcon } from '@radix-ui/react-icons';
 
 const SidebarDemo = () => {
   const userName = 'foo';
@@ -24,17 +24,19 @@ const SidebarDemo = () => {
     <div className="flex">
       <Sidebar userName={userName} onLogoutButtonClick={onLogoutButtonClick}>
         <SidebarMenuItem
+          as="a"
+          href="http://www.daglo.ai"
           icon={<IconJarLogoIcon className="w-4" />}
-          onClick={onSidebarMenuItemButtonClick}
         >
-          Button
+          as link
         </SidebarMenuItem>
         <SidebarMenuItem
+          as="button"
           icon={<IconJarLogoIcon className="w-4" />}
           isCurrentPath
           onClick={onSidebarMenuItemButtonClick}
         >
-          current path style
+          as button
         </SidebarMenuItem>
         <Accordion type="single" collapsible>
           <AccordionItem value="item-1">

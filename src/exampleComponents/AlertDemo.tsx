@@ -1,4 +1,4 @@
-import { Alert, AlertDescription, AlertTitle } from '@/src/ui/alert';
+import { Alert, AlertDescription, AlertTitle } from '@/src/components';
 import { RocketIcon } from '@radix-ui/react-icons';
 
 const AlertDemo = () => {
