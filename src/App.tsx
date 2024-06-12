@@ -1,22 +1,25 @@
 import ContentsLayout from './components/ContentsLayout';
-import AlertDemo from './exampleComponents/AlertDemo';
-import AlertDialogDemo from './exampleComponents/AlertDialogDemo';
-import BadgeDemo from './exampleComponents/BadgeDemo';
-import ButtonDemo from './exampleComponents/ButtonDemo';
-import CheckboxDemo from './exampleComponents/CheckboxDemo';
-import DatePickerDemo from './exampleComponents/DatePickerDemo';
-import DialogDemo from './exampleComponents/DialogDemo';
-import DisplayContainer from './exampleComponents/DisplayContainer';
-import InputDemo from './exampleComponents/InputDemo';
-import PaginationDemo from './exampleComponents/PaginationDemo';
-import RadioGroupDemo from './exampleComponents/RadioGroupDemo';
-import SelectDemo from './exampleComponents/SelectDemo';
-import SidebarDemo from './exampleComponents/SidebarDemo';
-import SonnerDemo from './exampleComponents/SonnerDemo';
-import SwitchDemo from './exampleComponents/SwitchDemo';
-import TabsDemo from './exampleComponents/TabsDemo';
-import TextareaDemo from './exampleComponents/TextareaDemo';
-import ToastDemo from './exampleComponents/ToastDemo';
+import AlertDemo from './demo/exampleComponents/AlertDemo';
+import AlertDialogDemo from './demo/exampleComponents/AlertDialogDemo';
+import BadgeDemo from './demo/exampleComponents/BadgeDemo';
+import ButtonDemo from './demo/exampleComponents/ButtonDemo';
+import CheckboxDemo from './demo/exampleComponents/CheckboxDemo';
+import DatePickerDemo from './demo/exampleComponents/DatePickerDemo';
+import DialogDemo from './demo/exampleComponents/DialogDemo';
+import DisplayContainer from './demo/exampleComponents/DisplayContainer';
+import InputDemo from './demo/exampleComponents/InputDemo';
+import PaginationDemo from './demo/exampleComponents/PaginationDemo';
+import RadioGroupDemo from './demo/exampleComponents/RadioGroupDemo';
+import SelectDemo from './demo/exampleComponents/SelectDemo';
+import SidebarDemo from './demo/exampleComponents/SidebarDemo';
+import SonnerDemo from './demo/exampleComponents/SonnerDemo';
+import SwitchDemo from './demo/exampleComponents/SwitchDemo';
+import TabsDemo from './demo/exampleComponents/TabsDemo';
+import TextareaDemo from './demo/exampleComponents/TextareaDemo';
+import ToastDemo from './demo/exampleComponents/ToastDemo';
+
+import './styles/calendarStyle.css';
+import './styles/index.css';
 
 const App = () => {
   return (
@@ -80,3 +83,10 @@ const App = () => {
 };
 
 export default App;
+// import React from 'react';
+
+// const App = () => {
+//   return <div>App</div>;
+// };
+
+// export default App;

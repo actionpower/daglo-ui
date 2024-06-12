@@ -1,5 +1,5 @@
 import { PropsWithChildren } from 'react';
-import Button from '../ui/button';
+import { Button } from '@/src/components';
 
 interface SidebarProps {
   userName?: string;

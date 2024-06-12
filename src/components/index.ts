@@ -3,8 +3,8 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from '@/src/ui/accordion';
-import { Alert, AlertDescription, AlertTitle } from '@/src/ui/alert';
+} from '@/src/components/Accordion';
+import { Alert, AlertDescription, AlertTitle } from '@/src/components/Alert';
 import {
   AlertDialog,
   AlertDialogAction,
@@ -15,10 +15,10 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
   AlertDialogTrigger,
-} from '@/src/ui/alert-dialog';
-import Badge from '@/src/ui/badge';
-import Button from '@/src/ui/button';
-import Checkbox from '@/src/ui/checkbox';
+} from '@/src/components/AlertDialog';
+import Badge from '@/src/components/Badge';
+import Button from '@/src/components/Button';
+import Checkbox from '@/src/components/Checkbox';
 import {
   Dialog,
   DialogContent,
@@ -27,9 +27,9 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from '@/src/ui/dialog';
-import Input from '@/src/ui/input';
-import Label from '@/src/ui/label';
+} from '@/src/components/Dialog';
+import Input from '@/src/components/Input';
+import Label from '@/src/components/Label';
 import {
   Pagination,
   PaginationContent,
@@ -38,19 +38,24 @@ import {
   PaginationLink,
   PaginationNext,
   PaginationPrevious,
-} from '@/src/ui/pagination';
-import { RadioGroup, RadioGroupItem } from '@/src/ui/radio-group';
+} from '@/src/components/Pagination';
+import { RadioGroup, RadioGroupItem } from '@/src/components/Radio-group';
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from '@/src/ui/select';
-import SonnerToaster from '@/src/ui/sonner';
-import Switch from '@/src/ui/switch';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/src/ui/tabs';
-import Textarea from '@/src/ui/textarea';
+} from '@/src/components/Select';
+import SonnerToaster from '@/src/components/Sonner';
+import Switch from '@/src/components/Switch';
+import {
+  Tabs,
+  TabsContent,
+  TabsList,
+  TabsTrigger,
+} from '@/src/components/Tabs';
+import Textarea from '@/src/components/Textarea';
 import {
   Toast,
   ToastAction,
@@ -59,15 +64,13 @@ import {
   ToastProvider,
   ToastTitle,
   ToastViewport,
-} from '@/src/ui/toast';
-import Toaster from '@/src/ui/toaster';
+} from '@/src/components/Toast';
+import Toaster from '@/src/components/Toaster';
 import ContentsLayout from './ContentsLayout';
 import DatePicker from './DatePicker';
 import DatePickerWithRange from './DatePickerWithRange';
 import Sidebar from './Sidebar';
 import SidebarMenuItem from './SidebarMenuItem';
-import 'src/style/index.css';
-import 'src/style/calendarStyle.css';
 
 export {
   Accordion,
