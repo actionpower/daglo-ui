@@ -1,7 +1,8 @@
 {
   "name": "@actionpower/daglo-ui",
-  "private": true,
-  "version": "0.0.0",
+  "description": "A quick library starter for React with Tailwind CSS, Vite, TypeScript and Shadcn-ui",
+  "private": false,
+  "version": "0.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -61,5 +62,16 @@
     "vite": "^5.2.0",
     "vite-plugin-dts": "^2.3.0",
     "vite-tsconfig-paths": "^4.3.2"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.umd.js",
+  "module": "./dist/index.es.js",
+  "types": "./dist/index.d.ts",
+  "license": "MIT",
+  "author": {
+    "name": "Yongmin Jeon",
+    "email": "yongmin.jeon@actionpower.kr"
   }
 }

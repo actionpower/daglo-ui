@@ -1,30 +1,26 @@
-# React + TypeScript + Vite
+<h1 align="center">@actionpower/daglo-ui</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+  This template provides a components using with React, Tailwindcss, Typescript and Shadcn-ui.
+</p>
 
-Currently, two official plugins are available:
+<!-- <p align="center">
+  <a href="https://www.npmjs.com/package/vite-plugin-dts">
+    <img src="https://img.shields.io/npm/v/vite-plugin-dts?color=orange&label=" alt="version" />
+  </a>
+  <a href="https://github.com/qmhc/vite-plugin-dts/blob/main/LICENSE">
+    <img src="https://img.shields.io/npm/l/vite-plugin-dts" alt="license" />
+  </a>
+</p> -->
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Install
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```sh
+npm install @actionpower/daglo-ui
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Setting
+
+...WIP
+
+</details>
