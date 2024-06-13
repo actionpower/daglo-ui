@@ -1,7 +1,7 @@
 import clsx from 'clsx';
 import React from 'react';
 import { cn } from '@/src/utils';
-import { ExtendedPropsWithChildrenAndAs } from '../type';
+import { ExtendedPropsWithChildrenAndAs } from '../types';
 
 interface SidebarMenuItemProps {
   icon?: React.ReactNode;

@@ -1,9 +1,7 @@
 import { Button, SonnerToaster } from '@/src/components';
-import useSonner from '@/src/hooks/useSonner';
+import { sonnerToast } from '@/src/utils';
 
 const SonnerDemo = () => {
-  const { sonnerToast } = useSonner();
-
   return (
     <>
       <SonnerToaster />
