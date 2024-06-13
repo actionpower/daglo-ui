@@ -18,8 +18,8 @@ import TabsDemo from './demo/exampleComponents/TabsDemo';
 import TextareaDemo from './demo/exampleComponents/TextareaDemo';
 import ToastDemo from './demo/exampleComponents/ToastDemo';
 
-import './styles/calendarStyle.css';
-import './styles/index.css';
+import '../dist/styles/index.css';
+import '../dist/styles/calendarStyle.css';
 
 const App = () => {
   return (
