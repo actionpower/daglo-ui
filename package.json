@@ -2,7 +2,7 @@
   "name": "@actionpower/daglo-ui",
   "description": "A quick library starter for React with Tailwind CSS, Vite, TypeScript and Shadcn-ui",
   "private": false,
-  "version": "0.1.0",
+  "version": "0.2.7",
   "type": "module",
   "scripts": {
     "dev": "vite",
