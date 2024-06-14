@@ -6,7 +6,7 @@ import {
 } from '@radix-ui/react-icons';
 
 import { cn } from '@/src/utils';
-import { ButtonProps, buttonVariants } from '@/src/components/Button';
+import { ButtonProps, buttonVariants } from './Button';
 import clsx from 'clsx';
 
 const Pagination = ({ className, ...props }: React.ComponentProps<'nav'>) => (
@@ -54,7 +54,7 @@ PaginationItem.displayName = 'PaginationItem';
 
 type PaginationLinkProps = {
   isActive?: boolean;
-} & Pick<ButtonProps, 'size'> &
+} & Partial<Pick<ButtonProps, 'size'>> &
   React.ComponentProps<'a'>;
 
 const PaginationLink = ({
