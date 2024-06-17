@@ -42,7 +42,7 @@ import {
   PaginationNext,
   PaginationPrevious,
 } from './components/Pagination';
-import { RadioGroup, RadioGroupItem } from './components/Radio-group';
+import { RadioGroup, RadioGroupItem } from './components/RadioGroup';
 import {
   Select,
   SelectContent,
