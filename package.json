@@ -1,11 +1,12 @@
 {
   "name": "@actionpower/daglo-ui",
-  "private": true,
-  "version": "0.0.0",
+  "description": "A quick library starter for React with Tailwind CSS, Vite, TypeScript and Shadcn-ui",
+  "private": false,
+  "version": "0.2.16",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "rm -rf dist && tsc && vite build && postcss src/styles --dir dist/styles",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
@@ -14,7 +15,6 @@
     "@radix-ui/react-alert-dialog": "^1.0.5",
     "@radix-ui/react-checkbox": "^1.0.4",
     "@radix-ui/react-dialog": "^1.0.5",
-    "@radix-ui/react-icons": "^1.3.0",
     "@radix-ui/react-label": "^2.0.2",
     "@radix-ui/react-popover": "^1.0.7",
     "@radix-ui/react-radio-group": "^1.1.3",
@@ -37,9 +37,10 @@
     "sonner": "^1.4.41",
     "tailwind-merge": "^2.3.0",
     "tailwindcss-animate": "^1.0.7",
-    "vite-tsconfig-paths": "^4.3.2"
+    "@radix-ui/react-icons": "^1.3.0"
   },
   "devDependencies": {
+    "@types/node": "^20.14.2",
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
     "@typescript-eslint/eslint-plugin": "^7.2.0",
@@ -54,9 +55,23 @@
     "eslint-plugin-react-refresh": "^0.4.6",
     "less": "^4.2.0",
     "postcss": "^8.4.38",
+    "postcss-cli": "^11.0.0",
     "prettier": "^3.3.0",
     "tailwindcss": "^3.4.3",
     "typescript": "^5.2.2",
-    "vite": "^5.2.0"
+    "vite": "^5.2.0",
+    "vite-plugin-dts": "^2.3.0",
+    "vite-tsconfig-paths": "^4.3.2"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.umd.js",
+  "module": "./dist/index.es.js",
+  "types": "./dist/index.d.ts",
+  "license": "MIT",
+  "author": {
+    "name": "Yongmin Jeon",
+    "email": "yongmin.jeon@actionpower.kr"
   }
 }
